@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Student Application Form</title>
+</head>
+<body>
+  <h1>Student Application Form</h1>
+  <form>
+    <fieldset>
+      <legend>Student Information</legend>
+      <input type="text" name="fullname" placeholder="Full Name" required maxlength="60"><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="tel" name="phone" placeholder="Phone Number" maxlength="20"><br>
+      <input type="text" name="studentID" placeholder="Student ID" required><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Course Details</legend>
+      <select name="course" required>
+        <option value="">Select your course...</option>
+        <option>BS Computer Science</option>
+        <option>BS Information Technology</option>
+        <option>BS Hospitality Management</option>
+      </select><br>
+      <label><input type="checkbox" name="subjects" value="math"> Math</label>
+      <label><input type="checkbox" name="subjects" value="science"> Science</label>
+      <label><input type="checkbox" name="subjects" value="english"> English</label><br>
+      <label><input type="radio" name="status" value="full" checked> Full-time</label>
+      <label><input type="radio" name="status" value="part"> Part-time</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Uploads</legend>
+      <label>Profile Picture: <input type="file" accept="image/*"></label><br>
+      <label>Intro Video: <input type="file" accept="video/*"></label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Additional Info</legend>
+      <textarea name="notes" placeholder="Write something about yourself" maxlength="500"></textarea><br>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
